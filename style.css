@@ -663,8 +663,8 @@ body {
 }
 
 .dest-thumb {
-  width: 94px;
-  height: 64px;
+  width: 84px;
+  height: 54px;
   border-radius: 10px;
   border: 1.5px solid var(--gold-main);
   background: var(--emerald-deep);
