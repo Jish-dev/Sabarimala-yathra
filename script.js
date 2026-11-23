@@ -800,7 +800,7 @@ function renderPhase3Chapter(ch) {
           സ്വാമിയേ ശരണമയ്യപ്പ
         </div>
         <div class="blessing-sub">
-          സമ്പൂർണ്ണ തീർത്ഥാടന സമർപ്പണം • SHARANAM 2026
+          സമ്പൂർണ്ണ തീർത്ഥാടന സമാപനം • SHARANAM 2026
         </div>
       </div>
     </article>
