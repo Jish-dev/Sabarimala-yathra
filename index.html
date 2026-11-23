@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ml">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#081612" />
+  <meta name="description"
+    content="SHARANAM – Digital Yatra 2026 (ശരണം – ശബരിമല യാത്ര 2026) – Mobile-first interactive Sabarimala pilgrimage itinerary and digital journey book." />
+  <title>SHARANAM – Digital Yatra 2026 | ശബരിമല യാത്ര 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500;600;700;800&family=Noto+Serif+Malayalam:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&family=Manjari:wght@400;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .bottom-tab .tab-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bottom-tab .tab-icon svg {
+      width: 23px;
+      height: 23px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <!-- Main Digital Journey Book Viewport -->
+    <main class="book-stage" id="bookStage" aria-live="polite">
+      <div id="chapterViewport"></div>
+    </main>
+
+    <!-- Sticky Bottom Navigation Dock -->
+    <footer class="bottom-nav-dock app-bottom-nav">
+
+      <!-- HOME -->
+      <button type="button" class="bottom-tab active" data-chapter="0" aria-label="ഹോം">
+        <span class="tab-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m3 10 9-7 9 7" />
+            <path d="M5 9v12h14V9" />
+            <path d="M9 21v-7h6v7" />
+          </svg>
+        </span>
+        <span>ഹോം</span>
+      </button>
+
+      <!-- DAY 1 -->
+      <button type="button" class="bottom-tab" data-chapter="1" aria-label="ഒന്നാം ദിവസം">
+        <span class="tab-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 21h18" />
+            <path d="M5 21V10l7-5 7 5v11" />
+            <path d="M9 21v-7h6v7" />
+            <path d="M12 5V2" />
+            <path d="M3 10h18" />
+          </svg>
+        </span>
+        <span>ദിവസം 1</span>
+      </button>
+
+      <!-- DAY 2 -->
+      <button type="button" class="bottom-tab" data-chapter="2" aria-label="രണ്ടാം ദിവസം">
+        <span class="tab-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m2 20 7-12 4 6 3-5 6 11H2Z" />
+            <path d="m7 12 2 2 2-2" />
+            <path d="M16 4v3" />
+            <path d="M14.5 5.5h3" />
+          </svg>
+        </span>
+        <span>ദിവസം 2</span>
+      </button>
+
+      <!-- NEXT STOP NAVIGATOR -->
+      <button type="button" class="bottom-tab" data-chapter="3" aria-label="അടുത്ത ക്ഷേത്രം">
+        <span class="tab-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="m15.5 8.5-2.3 4.7-4.7 2.3 2.3-4.7 4.7-2.3Z" />
+            <path d="M12 3v2" />
+            <path d="M12 19v2" />
+            <path d="M3 12h2" />
+            <path d="M19 12h2" />
+          </svg>
+        </span>
+        <span>നാവിഗേറ്റർ</span>
+      </button>
+
+      <!-- RETURN JOURNEY -->
+      <button type="button" class="bottom-tab" data-chapter="4" aria-label="മടക്കയാത്ര">
+        <span class="tab-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="4" y="3" width="16" height="15" rx="3" />
+            <path d="M4 11h16" />
+            <path d="M8 18v3" />
+            <path d="M16 18v3" />
+            <path d="M8 7h3" />
+            <path d="M13 7h3" />
+            <circle cx="8" cy="15" r="1" />
+            <circle cx="16" cy="15" r="1" />
+          </svg>
+        </span>
+        <span>മടക്കം</span>
+      </button>
+
+      <!-- GUIDE -->
+      <button type="button" class="bottom-tab" data-chapter="5" aria-label="നിർദ്ദേശങ്ങൾ">
+        <span class="tab-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 5.5C7 4 9.5 4 12 6c2.5-2 5-2 8-.5V19c-3-1.5-5.5-1.5-8 .5-2.5-2-5-2-8-.5V5.5Z" />
+            <path d="M12 6v13.5" />
+            <path d="M7 9h2" />
+            <path d="M15 9h2" />
+            <path d="M7 12h2" />
+            <path d="M15 12h2" />
+          </svg>
+        </span>
+        <span>ഗൈഡ്</span>
+      </button>
+
+    </footer>
+
+  </div>
+
+  <!-- Feedback Toast -->
+  <div class="toast-banner" id="toastBanner" role="status" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
