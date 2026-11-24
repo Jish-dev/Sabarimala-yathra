@@ -152,7 +152,6 @@ const CHAPTERS = [
         nameEn: "Vaikom Temple",
         location: "വൈക്കം, കോട്ടയം ജില്ല (Vaikom, Kottayam)",
         purpose: "സമയലഭ്യത അനുസരിച്ച് മാത്രം (Optional visit, depending on available time)",
-        optionalTag: "⏳ സമയലഭ്യത അനുസരിച്ച് (Optional)",
         isOptional: true,
         note: "യാത്രാ സമയം അനുകൂലമാണെങ്കിൽ മാത്രം സന്ദർശിക്കുന്ന ക്ഷേത്രം.",
         mapQuery: "Vaikom Mahadeva Temple Kerala"
