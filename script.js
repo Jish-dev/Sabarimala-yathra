@@ -143,7 +143,7 @@ const CHAPTERS = [
         location: "ചോറ്റാനിക്കര, എറണാകുളം (Chottanikkara, Ernakulam)",
         purpose: "ദർശനം, അന്നദാനം (Darshan & Annadanam)",
         foodTag: "🍛 അന്നദാനം (Annadanam)",
-        note: "ദേവീ ദർശനവും ഉച്ചയ്ക്കുള്ള അന്നദാനവും.",
+        note: "ദേവീ ദർശനവും രാത്രിയിലെ അന്നദാനവും.",
         mapQuery: "Chottanikkara Devi Temple Kerala"
       },
       {
